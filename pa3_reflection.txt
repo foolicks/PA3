@@ -1,0 +1,31 @@
+Name:Felix Najera
+PID:A17618969
+Date: 8/24/2024
+
+1. (1pt) Approximately how long did you spend on this PA?
+20 hours due to having a major issue on my BucketSort having some unknown behavior occur. Where \
+the code will actually change performance from run so I'm not sure what to do with my analysis. \
+I assume the issue is RAM I'm not sure whatsoever although in hindsight I probably should've \
+set my Random seed somehow.
+2. (2pt) Between Count Sort and Bucket Sort, which did you find easier to complete, and why?
+I found Count Sort to be the easier implementation although the benefits from Bucket Sort \
+are also completely valid for evenly distributed data. Especially due to most distributions being \
+the Normal Curve form thus it also requires case by case usage. 
+3. (1pt) What is the worst-case runtime for Count Sort, in terms of Big-O?
+The worst-case runtime for Count Sort is O(n + k), where n is the number of elements and \
+k is the range of input values.
+4. (2pt) Is Count Sort an iterative sort, a divide-and-conquer sort, or neither? Why?
+Count Sort is an iterative sort. It iterates through the input to \
+count occurrences and then iterates again to place elements in sorted order.
+5. (1pt) What is the worst-case runtime for Bucket Sort, in terms of Big-O?
+The worst-case runtime for Bucket Sort is O(n^2) when all elements fall into a single bucket.\
+As opposed to the preferred case of all the data falling into the buckets evenly.
+6. (2pt) Is Bucket Sort an iterative sort, a divide-and-conquer sort, or neither? Why?
+Bucket Sort is neither iterative nor divide-and-conquer. It distributes elements into buckets \
+and then sorts each bucket, typically using another algorithm.
+7. (1pt) Did you modify any of the tests in SortsTest.java? Why or why not?
+I didn't change any of the tests personally because I wasn't entirely sure \
+how that would've helped me find out the issue of why Bucket Sort couldn't maintain its results
+without using several magic numbers as fake. The only "test" I would think would to check whether 
+the provided array is identical to one already written but even when using the same method \
+as my original my runtime wouldn't remain the same due to my usage of Random.
